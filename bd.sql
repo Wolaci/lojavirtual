@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.42)
 # Base de Dados: nova_loja
-# Tempo de Geração: 2017-06-12 12:49:42 +0000
+# Tempo de Geração: 2017-06-21 19:45:14 +0000
 # ************************************************************
 
 
@@ -61,7 +61,12 @@ LOCK TABLES `categories` WRITE;
 
 INSERT INTO `categories` (`id`, `sub`, `name`)
 VALUES
-	(6,NULL,'Monitor');
+	(6,NULL,'Monitor'),
+	(14,NULL,'Som'),
+	(15,14,'Headphones'),
+	(16,14,'Microfones'),
+	(17,15,'Com Fio'),
+	(18,15,'Sem Fio');
 
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
